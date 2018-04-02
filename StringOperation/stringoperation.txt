@@ -1,0 +1,58 @@
+
+package stringoperation;
+
+public class StringOperation {
+
+    public static void main(String[] args) {
+        try{
+            String value = "Hello";
+            // concat
+            System.out.println("Concat : "+ value.concat(" World"));
+
+            // charAt(int index) -> return type 'char'
+            System.out.println("CharAt : " + value.charAt(4));
+            
+            // CompareTo(String s) -> return int (if 0 means same and any other number means not match)
+            System.out.println("CompareTo : " + value.compareTo("Hello"));
+        
+            // Contains(String s) -> return boolean (if true means found exact char and false means not match)
+            System.out.println("Contains : "+value.contains("h"));
+        
+            // endsWith(String s) -> return boolean 
+            System.out.println("endsWith: "+value.endsWith("o"));
+            
+            // equal(Object s) -> return boolean
+            System.out.println("equal: "+value.equals("Hell"));
+        
+            //IndexOf(String s) -> return int 
+            System.out.println("IndexOf : "+value.indexOf("o"));
+        
+            // isEmpty() -> return boolean
+            System.out.println("isEmpty : "+ value.isEmpty());
+        
+            //length() -> return int 
+            System.out.println("Length : "+ value.length());
+        
+            //replace(String oldChar, String newChar) -> return string 
+            System.out.println("Replace : "+value.replace("H", "W"));
+
+            // subString(int firstIndex, int lastIndex) -> return string (first index is countable but lastindex in not)
+            System.out.println("substring :"+value.substring(1, 5));
+            
+            // split(String reg) -> return String[] 
+            System.out.println(value);
+            String[] splitValue = value.split("w");
+            System.out.println("1st Index value: " + splitValue[0]);
+            System.out.println("2nd Index value: " + splitValue[1]);
+            System.out.println("3rd Index value: " + splitValue[2]);
+            System.out.println("4th Index value: " + splitValue[3]);
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
+        
+        
+        
+        
+    }
+    
+}
